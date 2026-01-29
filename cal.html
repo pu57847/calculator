@@ -1,0 +1,44 @@
+<html>
+    <script>
+        class calculator{
+            constructor(a,b){
+                this.a=a
+                this.b=b
+            }
+            add(){
+                document.write(this.a+this.b)
+            }
+            sub(){
+                document.write(this.a-this.b)
+            }
+            mul(){
+                document.write(this.a*this.b)
+            }
+            div(){
+                document.write(this.a/this.b)
+            }
+        }
+
+        num1=Number(prompt("enter a num"));
+        num2=Number(prompt("enter a num"));
+        operator=prompt("enter an operator");
+        obj1=new calculator(num1,num2)
+        if (operator=="+"){
+            obj1.add()
+        }
+        else if(operator=="-"){
+            obj1.sub()
+        }
+        else if(operator=="*"){
+            obj1.mul()
+        }
+        else if(operator=="/"){
+            obj.div()
+        }
+        else{
+            document.write("not valid")
+        }
+        
+
+    </script>
+</html>
